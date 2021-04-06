@@ -52,7 +52,7 @@ const MealsNavigator = () => {
             })}
                           component={CategoryMealsScreen}/>
             <Stack.Screen name="MealDetail"
-                          options={({route}) => ({headerTitle: MEALS.find(meal => meal.id === route.params.mealId).title})}
+                          options={({route}) => ({headerTitle: route.params.mealTitle})}
                           component={MealDetailScreen}/>
         </Stack.Navigator>
     );
